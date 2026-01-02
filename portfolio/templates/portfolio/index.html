@@ -1,0 +1,420 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kowsalya-Portfolio</title>
+  <link rel="icon" href="{% static 'portfolio/images/port3.png' %}" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="{% static 'portfolio/css/portfoliome.css' %}">
+</head>
+
+<body>
+  <!-- Hero Section - Homepage -->
+  <section class="hero">
+    <nav id="navbar">
+      <h2 class="logo"><a href="#">Kowsalya<span>.</span></a></h2>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#Project">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <h3 class="greeting">Hello, I'm</h3>
+        <h1 class="name glow-text">Kowsalya S</h1>
+        <h2 class="title">Web Developer</h2>
+        <p class="tagline">Crafting beautiful, responsive digital experiences that drive results</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">Hire Me</a>
+          <a href="#Project" class="btn btn-secondary">View Work</a>
+           <a href="{% static 'portfolio/docs/Kowsipdf2025.pdf' %}" 
+           class="btn btn-download" 
+           download>
+           Download CV
+        </a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="image-wrapper">
+          <img src="{% static 'portfolio/images/kowsidp1.jpg' %}" alt="Kowsalya - Professional Web Developer" class="glow-img">
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="arrow"></div>
+    </div>
+  </section>
+
+<!-- about section -->
+ <section id="about" class="about-section">
+        <div class="containerabout">
+            <div class="about-content">
+                <!-- Header -->
+                <div class="about-header">
+                    <h1>About Me</h1>
+                    <p class="subtitle">Passionate Developer | Problem Solver | Team Player</p>
+                </div>
+
+                <!-- Skills Highlight -->
+                <div class="skills-highlight">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class='bx bx-code-alt'></i></div>
+                        <h3>Clean Code</h3>
+                        <p>Semantic, maintainable code following best practices and industry standards</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class='bx bx-devices'></i></div>
+                        <h3>Responsive Design</h3>
+                        <p>Pixel-perfect across all devices and screen sizes with optimal performance</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class='bx bx-rocket'></i></div>
+                        <h3>Fast Delivery</h3>
+                        <p>Agile development approach ensuring timely project completion</p>
+                    </div>
+                </div>
+
+                <!-- Main Content -->
+                <div class="main-content">
+                    <!-- About Text -->
+                    <div class="about-text">
+                        <p class="intro">With a passion for creating intuitive user experiences, I specialize in building modern web applications that are both visually stunning and highly functional. My approach combines technical expertise with an eye for design, ensuring every project delivers measurable business value and exceptional user satisfaction.</p>
+                    </div>
+
+                    <!-- Value Proposition -->
+                    <div class="value-proposition">
+                        <h2>What I Bring to Your Team</h2>
+                        <p>I don't just write code – I solve business problems. My focus is on delivering scalable solutions that drive growth, improve efficiency, and create lasting value for both users and stakeholders.</p>
+                    </div>
+
+                    <!-- Stats Section -->
+                    <div class="stats-section">
+                        <div class="stat-item">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <!-- <div class="stat-item">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div> -->
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Client Satisfaction</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Availability</span>
+                        </div>
+                    </div>
+
+                    <!-- Traits Grid -->
+                    <div class="traits-grid">
+                        <div class="trait-item">
+                            <i class='bx bx-check-circle'></i>
+                            <span>Strong analytical and problem-solving abilities</span>
+                        </div>
+                        <div class="trait-item">
+                            <i class='bx bx-check-circle'></i>
+                            <span>Meticulous attention to detail and quality</span>
+                        </div>
+                        <div class="trait-item">
+                            <i class='bx bx-check-circle'></i>
+                            <span>Excellent communication and collaboration</span>
+                        </div>
+                        <div class="trait-item">
+                            <i class='bx bx-check-circle'></i>
+                            <span>Passionate continuous learner and innovator</span>
+                        </div>
+                        <div class="trait-item">
+                            <i class='bx bx-check-circle'></i>
+                            <span>Proven track record of meeting deadlines</span>
+                        </div>
+                        <div class="trait-item">
+                            <i class='bx bx-check-circle'></i>
+                            <span>Adaptable to new technologies and frameworks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HR Appeal Section -->
+                <div class="hr-appeal">
+                    <h2>Why Companies Choose Me</h2>
+                    <div class="appeal-points">
+                        <div class="appeal-point">
+                            <i class='bx bx-trending-up'></i>
+                            <h3>ROI-Focused</h3>
+                            <p>Every line of code I write is designed to maximize business value and drive measurable results for your organization.</p>
+                        </div>
+                        <div class="appeal-point">
+                            <i class='bx bx-group'></i>
+                            <h3>Team Player</h3>
+                            <p>I thrive in collaborative environments, mentoring junior developers and contributing to a positive team culture.</p>
+                        </div>
+                        <div class="appeal-point">
+                            <i class='bx bx-time-five'></i>
+                            <h3>Reliable Delivery</h3>
+                            <p>Consistent track record of delivering high-quality projects on time and within budget constraints.</p>
+                        </div>
+                        <div class="appeal-point">
+                            <i class='bx bx-bulb'></i>
+                            <h3>Innovation Mindset</h3>
+                            <p>I bring fresh perspectives and cutting-edge solutions to optimize processes and user experiences.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Section -->
+                <div class="cta-section">
+                    <a href="#contact" class="cta-button">
+                        Let's Build Something Amazing Together
+                        <i class='bx bx-right-arrow-alt' style="margin-left: 10px;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+  <!-- Skills -->
+  <div id="skills">
+    <h2 class="skillset1">My Skills</h2>
+    <section class="skill-section">
+      <div class="skills-left">
+        <div class="skill"><div class="skill-name">HTML <span>85%</span></div><div class="progress-bar"><div class="progress" style="width: 85%;"></div></div></div>
+        <div class="skill"><div class="skill-name">CSS <span>75%</span></div><div class="progress-bar"><div class="progress" style="width: 75%;"></div></div></div>
+        <div class="skill"><div class="skill-name">JavaScript <span>45%</span></div><div class="progress-bar"><div class="progress" style="width: 45%;"></div></div></div>
+        <div class="skill"><div class="skill-name">Bootstrap <span>50%</span></div><div class="progress-bar"><div class="progress" style="width: 50%;"></div></div></div>
+        <div class="skill"><div class="skill-name">VS Code <span>75%</span></div><div class="progress-bar"><div class="progress" style="width: 75%;"></div></div></div>
+        <div class="skill"><div class="skill-name">GitHub <span>50%</span></div><div class="progress-bar"><div class="progress" style="width: 50%;"></div></div></div>
+        <div class="skill"><div class="skill-name">Figma <span>40%</span></div><div class="progress-bar"><div class="progress" style="width: 40%;"></div></div></div>
+      </div>
+      <div class="skills-right">
+        <img src="{% static 'portfolio/images/vetriabout.png' %}" alt="Web Development Skills Illustration">
+      </div>
+    </section>
+  </div>
+
+  <!-- Projects -->
+  <section id="Project">
+    <h2 class="heading">My Projects</h2>
+    <div class="project-container">
+      <div class="project-box">
+        <img src="{% static 'portfolio/images/eimage.png' %}" alt="E-commerce Website Project">
+        <div class="project-layer">
+          <h4>E-commerce Website</h4>
+          <p>I developed a fully functional e-commerce website tailored for a supermarket, designed to provide a seamless online shopping experience.
+            It is built using HTML, CSS (Bootstrap), and JavaScript, with features like responsive design</p>
+          <a href="https://kowsalya2025.github.io/doorstep30-5/homepage.html" class="project-link" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <img src="{% static 'portfolio/images/pro2.png' %}" alt="Restaurant Website Project">
+        <div class="project-layer">
+          <h4>Food Ordering Website</h4>
+          <p>I created a responsive online food ordering website designed for restaurants or cloud kitchens. The platform allows add items to a dynamic cart, and place orders with real-time price.
+            The site features a user-friendly interface built with HTML, CSS, and JavaScript. It includes key components like user login/registration.</p>
+          <a href="https://kowsalya2025.github.io/projectkitchen/kitchenfigma/firstpage.html" class="project-link" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <img src="{% static 'portfolio/images/pro33.png' %}" alt="Travel Website Project">
+        <div class="project-layer">
+          <h4>Super Market - Billing</h4>
+          <p>The platform features product listings, cart management, dynamic billing with tax and subtotal calculations, and a secure checkout system.
+            It is built using HTML, CSS (Bootstrap), and JavaScript, with features like responsive design, localStorage-based cart persistence, and downloadable invoice generation.</p>
+          <a href="https://kowsalya2025.github.io/billing/invoiceweb/firstpage.html" class="project-link" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <img src="{% static 'portfolio/images/pro44.png' %}" alt="Portfolio Website Project">
+        <div class="project-layer">
+          <h4>Portfolio Website</h4>
+          <p>I developed a personal portfolio website to showcase my skills, projects, and achievements as a web developer.
+            Designed with clean and responsive UI using HTML, CSS and JavaScript. It is optimized for all devices and includes smooth navigation, scroll animations, 
+            and a project gallery with live links and GitHub integration.</p>
+          <a href="#" class="project-link" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <img src="{% static 'portfolio/images/pro55.png' %}" alt="Event Planner Website Project">
+        <div class="project-layer">
+          <h4>Herbal Products Website</h4>
+          <p>I developed an online herbal product website focused on promoting natural and organic wellness products. The platform allows users to explore a wide range of herbal items such as Ayurvedic oils, teas, powders, and skincare products, complete with images, descriptions, prices, and health benefits.</p>
+          <a href="https://kowsalya2025.github.io/herbalweb30/herbalweb/homepage.html" class="project-link" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <img src="{% static 'portfolio/images/pro66.png' %}" alt="Hospital Website Project">
+        <div class="project-layer">
+          <h4>Baby Products Website</h4>
+          <p>I designed and developed a Baby Products e-commerce website focusing on user experience using only HTML and CSS. The layout includes a visually appealing homepage, featured product sections, category filters (Bos,Girls), and a clean grid-style product gallery.</p>
+          <a href="https://babyproject.onrender.com/" class="project-link" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <img src="{% static 'portfolio/images/pro77.png' %}" alt="Hospital Website Project">
+        <div class="project-layer">
+          <h4>Wedding Card Website</h4>
+          <p>A service that allows couples to design, customize, and share wedding invitations digitally or order printed copies.</p>
+          <a href="https://kowsalya2025.github.io/wedcardwebsite/home.html" class="project-link" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <img src="{% static 'portfolio/images/pro88.png' %}" alt="Hospital Website Project">
+        <div class="project-layer">
+          <h4>Online Cooking Class Website</h4>
+          <p>A platform where users can join live or recorded cooking lessons, learn new recipes, and interact with chefs online.</p>
+          <a href="https://kitchenappflask-5.onrender.com/" class="project-link" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <img src="{% static 'portfolio/images/pro99.png' %}" alt="Hospital Website Project">
+        <div class="project-layer">
+          <h4>Bakery Website</h4>
+          <p>A showcase of cakes, pastries, and baked goods with options for online ordering.</p>
+          <a href="https://cheriicakeweb.onrender.com/" class="project-link" target="_blank">View Project</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <div class="container" id="contact">
+    <div class="form-section">
+      <h1>Contact Me</h1>
+      <p>Get in touch with me through the contact form below for any inquiries or collaboration opportunities.</p>
+
+      <form id="contact-form">
+        {% csrf_token %}
+        <input type="text" name="from_name" placeholder="Your Name" required>
+        <input type="email" name="reply_to" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit" class="conbtn">Send Message</button>
+        <p id="status-message"></p>
+      </form>
+    </div>
+
+    <div class="address-section">
+      <h2>KOWSALYA S</h2>
+      <div class="address">
+        <p><strong>Address:</strong></p>
+        <p>Sirunallikovil Po<br>Paramathi Velur Tk<br>Namakkal Dt</p>
+        <p><strong>Mobile:</strong> +91 9342245971</p>
+        <p><strong>Email:</strong> kowsalyacse1992@gmail.com</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/919342245971" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <i class='bx bxl-whatsapp'></i>
+  </a>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" aria-label="Scroll to top">
+    <i class='bx bx-chevron-up'></i>
+  </button>
+
+
+     <footer>
+        <p>Kowsalya</p>
+        <p>Connect with me:</p>
+        <div class="social">
+            <a href="https://www.linkedin.com/feed/?trk=404_page" target="_blank" aria-label="LinkedIn Profile"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://facebook.com/Kowsi Selva" target="_blank" aria-label="Facebook Profile"><i class='bx bxl-facebook'></i></a>
+            <a href="https://instagram.com/skowsi2021" target="_blank" aria-label="Instagram Profile"><i class='bx bxl-instagram'></i></a>
+            <a href="https://github.com/kowsalya2025" target="_blank" aria-label="GitHub Profile"><i class='bx bxl-github'></i></a>
+        </div>
+        <p class="end">© Kowsalya. All Rights Reserved</p>
+    </footer>
+
+  <!-- JS (unchanged visuals, form now posts to Django) -->
+  <script>
+    // CSRF helper
+    function getCookie(name) {
+      const value = `; ${document.cookie}`;
+      const parts = value.split(`; ${name}=`);
+      if (parts.length === 2) return parts.pop().split(';').shift();
+    }
+
+    // Contact form submission via AJAX to Django
+    document.getElementById("contact-form").addEventListener("submit", async function(e) {
+      e.preventDefault();
+      const statusMsg = document.getElementById("status-message");
+      statusMsg.textContent = "Sending...";
+      statusMsg.style.color = "blue";
+
+      const formData = new FormData(this);
+      try {
+        const res = await fetch("{% url 'contact_submit' %}", {
+          method: "POST",
+          headers: { "X-CSRFToken": getCookie("csrftoken") },
+          body: formData
+        });
+        const data = await res.json();
+        if (res.ok && data.ok) {
+          statusMsg.textContent = "✅ Message sent successfully!";
+          statusMsg.style.color = "lightgreen";
+          this.reset();
+        } else {
+          statusMsg.textContent = "❌ Failed to send message. Please try again.";
+          statusMsg.style.color = "red";
+          console.error("Errors:", data.errors || data);
+        }
+      } catch (err) {
+        statusMsg.textContent = "❌ Failed to send message. Please try again.";
+        statusMsg.style.color = "red";
+        console.error(err);
+      }
+    });
+
+    // Scroll to top button (same behavior)
+    const scrollToTopBtn = document.querySelector('.scroll-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        scrollToTopBtn.style.display = "flex";
+      } else {
+        scrollToTopBtn.style.display = "none";
+      }
+    });
+    scrollToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Animate skills on scroll (unchanged)
+    const skills = document.querySelectorAll('.skill');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const progress = entry.target.querySelector('.progress');
+          progress.style.width = progress.style.width;
+        }
+      });
+    }, {threshold: 0.5});
+    skills.forEach(skill => observer.observe(skill));
+  </script>
+</body>
+</html>
