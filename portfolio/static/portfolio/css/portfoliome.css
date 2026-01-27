@@ -175,10 +175,10 @@
     animation: glowText 2s ease-in-out infinite alternate;
 }
 .glow-img{
-     width: 100%;
-    height: 100%;
-    /* width: 350px;
-    height: 350px; */
+     /* width: 100%;
+    height: 100%; */
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     object-fit: cover;
     animation: glowimage 2s ease-in-out infinite alternate;
